@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class sliderDrawer extends StatelessWidget {
+class SliderDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +12,7 @@ class sliderDrawer extends StatelessWidget {
             accountName: Text('Bhavneet'),
             accountEmail: Text('Developer'),
             currentAccountPicture: CircleAvatar(
-              backgroundImage:AssetImage("asset/images/Bhavneet_Lightweight.jpeg"), )
+              backgroundImage:AssetImage("asset\images\Bhavneet_Lightweight.jpeg"), )
             
           ),
           

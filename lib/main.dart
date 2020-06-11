@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'sliderDrawer.dart';
+import 'SliderDrawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,8 +28,10 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(title: Text("Welcome to My World!"),),
 
 
-    body: Center(child: Card(child: Column(children: <Widget>[
-      Image.asset("assets\images\Bhavneet_Lightweight.jpeg",width:100),
+    body: Center(child: Card(
+      child: Column(
+        children: <Widget>[
+      Image.asset("assets/images/Triple_monitor.jpg"),
     ],
     ),
     ),
@@ -39,7 +41,7 @@ class MyHomePage extends StatelessWidget {
    
     
     floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.phone),),  
-    //sliderDrawer.dart
+    //SliderDrawer.dart
     );
   }
 }
