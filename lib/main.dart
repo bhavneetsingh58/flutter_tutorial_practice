@@ -28,6 +28,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   var myText ="Change My Name";
+  TextEditingController _nameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,10 +49,13 @@ class _MyHomePageState extends State<MyHomePage> {
           SizedBox(height: 10,),
           Padding(
             padding: const EdgeInsets.all(12.0),
-            child: TextField(decoration: InputDecoration(
+            child: TextField(
+            controller: _nameController,
+            decoration: InputDecoration(
             border: OutlineInputBorder(),
             hintText: "Enter Some Text",
             labelText: "Name",),
+            
             ),
           ),
 
@@ -65,8 +69,9 @@ class _MyHomePageState extends State<MyHomePage> {
     
    
     
-    floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.send),),  
-    //SliderDrawer.dart
+    floatingActionButton: FloatingActionButton(onPressed: (){myText = _nameController.text;
+    setState(() {});},child: Icon(Icons.send),),  
+    //drawer: SliderDrawer() ,
     );
   }
 }

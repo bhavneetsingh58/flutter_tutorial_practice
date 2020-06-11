@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 class SliderDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: Drawer(
+    return Drawer(
       child:ListView(
         padding: const EdgeInsets.all(0),
         children: <Widget>[
@@ -37,7 +36,7 @@ class SliderDrawer extends StatelessWidget {
         ],
       ),
     
-      ),
+      
     );
   }
 }
